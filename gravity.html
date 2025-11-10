@@ -23,7 +23,7 @@ const config = {
 };
 
 const game = new Phaser.Game(config);
-let player, cursors, wKey;
+let player, cursors, wKey, aKey, dKey;
 let ground;
 
 function preload() {
@@ -57,12 +57,12 @@ function update() {
     player.setVelocityY(-350); // jump up
 
       // Move left
-  if (cursors.left.isDown || this.aKey.isDown) && player.body.touching.down) {
+  if (cursors.left.isDown || this.aKey.isDown) {
     player.setVelocityX(-200);
   }
   
   // Move right
-  if (cursors.right.isDown || this.dKey.isDown) && player.body.touching.down) {
+  if (cursors.right.isDown || this.dKey.isDown) {
     player.setVelocityX(200);
 
   }
