@@ -1,2 +1,2 @@
-# Phaser-Tutorial
-Phaser Tutorial
+# NEAPhaser
+Phaser basics
