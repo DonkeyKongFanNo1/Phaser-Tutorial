@@ -23,7 +23,7 @@ const config = {
 };
 
 const game = new Phaser.Game(config);
-let player, cursors, wKey, aKey, dKey;
+let player, keys, wKey, aKey, dKey;
 let ground;
 
 function preload() {
@@ -45,7 +45,7 @@ function create() {
   this.physics.add.collider(player, ground);
 
   // Controls
-  cursors = this.input.keyboard.createCursorKeys();
+  keys = this.input.keyboard.createCursorKeys();
   wKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
   aKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   dKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
