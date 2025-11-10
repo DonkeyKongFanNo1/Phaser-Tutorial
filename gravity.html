@@ -57,12 +57,12 @@ function update() {
     player.setVelocityY(-350); // jump up
 
       // Move left
-  if (cursors.left.isDown || this.aKey.isDown) {
+  if (cursors.left.isDown || this.aKey.isDown) && player.body.touching.down) {
     player.setVelocityX(-200);
   }
   
   // Move right
-  if (cursors.right.isDown || this.dKey.isDown) {
+  if (cursors.right.isDown || this.dKey.isDown) && player.body.touching.down) {
     player.setVelocityX(200);
 
   }
